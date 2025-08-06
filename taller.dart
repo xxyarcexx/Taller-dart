@@ -2,7 +2,35 @@ import 'dart:math';
 import 'dart:io';
 
 void main() {
-  fifthExercise();
+  do{
+    print("ingresa la opcion a realizar (si no deseas ver mas, ingresa el numero 0) del 1 al 6");
+    int? option = int.parse(stdin.readLineSync()!);
+    switch(option){
+      case 1:
+        firthExercise();
+        break;
+      case 2:
+        secondExercise();
+        break;
+      case 3:
+        thirdExercise();
+        break;
+        case 4:
+        fourthExercise();
+        break;
+        case 5:
+        fifthExercise();
+        break;
+        case 6:
+        sixthExercise();
+        break;
+        case 0:
+        break;
+    }
+    if(option == 0){
+      break;
+    }
+  }while(true);
 }
 
 void firthExercise() {
