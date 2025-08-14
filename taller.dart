@@ -3,7 +3,13 @@ import 'dart:io';
 
 void main() {
   do{
-    print("ingresa la opcion a realizar (si no deseas ver mas, ingresa el numero 0) del 1 al 6");
+  print("ingresa la opcion a realizar (si no deseas ver mas, ingresa el numero 0) del 1 al 6 \n"
+        "1. Calcular la distancia recorrida por un objeto en movimiento\n"
+        "2. Calcular el promedio de tres notas\n"
+        "3. Calcular el puntaje total de un equipo de fútbol\n"
+        "4. Calcular el total devengado por un empleado\n"
+        "5. Calcular la hipotenusa de un triángulo rectángulo\n"
+        "6. Convertir temperatura de grados Celsius a Fahrenheit");
     int? option = int.parse(stdin.readLineSync()!);
     switch(option){
       case 1:
